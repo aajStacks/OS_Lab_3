@@ -1,0 +1,10 @@
+//Author@ Mohammed Hossain
+//Task_3_2
+#include <stdio.h>
+#include <unistd.h>
+
+int main(int argc, char * argv[]){
+    execvp("echo", &argv[0]);
+    printf("EXECV Failed\n");
+    /*The above line will be printed only on error and not otherwise*/
+}
